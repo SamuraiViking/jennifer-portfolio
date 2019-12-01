@@ -11,7 +11,7 @@ const Video = (props) => {
 
 const Videos = () => {
     return (
-        <div className="videos">
+        <div id="media" className="videos">
             <Video
                 title="delta"
                 url="https://www.youtube.com/embed/L8josds8TSw"

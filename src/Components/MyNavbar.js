@@ -12,10 +12,8 @@ const MyNavBar = () => {
                 <Nav id="right">
                     <Nav.Link href="#home">HOME</Nav.Link>
                     <Nav.Link href="#about">ABOUT</Nav.Link>
-                    <Nav.Link href="#link">MEDIA</Nav.Link>
-                    <Nav.Link href="#about">HEADSHOT</Nav.Link>
-                    <Nav.Link href="#about">RESUME</Nav.Link>
-                    <Nav.Link href="#about">CONTACT</Nav.Link>
+                    <Nav.Link href="#media">MEDIA</Nav.Link>
+                    <Nav.Link href="#contact">CONTACT</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
