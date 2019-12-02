@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { 
+    fab,
+    faFacebook,
+    faInstagram,
+    faLinkedinIn,
+ } from '@fortawesome/free-brands-svg-icons'
+ 
+library.add(fab, faFacebook, faInstagram, faLinkedinIn)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

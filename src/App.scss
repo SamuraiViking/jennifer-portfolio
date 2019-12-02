@@ -1,36 +1,46 @@
 
 html, body, .App, #root {
     height: 100%;
+    width: 100%;
 }
 
-#right {
-    background: #f8f9fa;
-    padding: 20px;
+.nav-icons {
+    display: flex;
 }
 
 #my-nav-bar {
     height: 100px;
-    padding: 20px;
+    background: black;
+    padding: 0px;
 
     #brand {
         font-style: bold;
         font-size: 2em;
         letter-spacing: 5px;
+        padding-left: 30px;
     }
 
     #right {
         font-size: 20px;
+        background: #f8f9fa;
+        padding-right: 15px;
+        line-height: 50px;
+
+        .links {
+            margin-left: 20px;
+        }
     }
-    #right * {
-        margin-left: 20px;
-    }
+
+}
+
+.nav-icons {
+    font-size: 30px;
 }
 
 
 
 .About {
-    padding: 100px;
-    // margin: 100px auto;
+    padding: 150px 15px;
     text-align: center;
 
     .header {
@@ -63,16 +73,17 @@ html, body, .App, #root {
 }
 
 .fixed-background {
-    background-image: url("http://2.bp.blogspot.com/-pATX0YgNSFs/VP-82AQKcuI/AAAAAAAALSU/Vet9e7Qsjjw/s1600/Cat-hd-wallpapers.jpg");
+    background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/72733857_10157763436659082_2310371880428634112_n.jpg?_nc_cat=100&_nc_ohc=xQBFs_gKLEAAQkKgR33zxTGL5KTMbvSxwOZB8BPjVl0pAsP-B2SNZoa-A&_nc_ht=scontent-iad3-1.xx&oh=801a74bec0d755491dc30ee845a68885&oe=5E8AC39B");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     text-align: center;
+    background-size: cover;
 
     .header {
         font-size: 50px;
-        padding: 100px 0px;
-        color: white;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
         letter-spacing: 5px;
         font-weight: 600;
     }
@@ -80,8 +91,9 @@ html, body, .App, #root {
 
 .videos {
     max-width: 943px;
-    padding: 0px 15px;
-    margin: 100px auto;
+    padding: 0 15px;
+    padding-top: 100px;
+    margin: 0px auto;
 
     .video {
         text-align: center;
@@ -104,9 +116,9 @@ html, body, .App, #root {
     padding: 15px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 300px 300px 300px;
     width: 100%;
-    grid-gap: 15px;
+    grid-gap: 20px;
     max-width: 943px;
     margin: 0px auto;
     margin-bottom: 100px;
@@ -115,20 +127,13 @@ html, body, .App, #root {
         overflow: hidden;
 
         img {
+            display: block;
+            margin: 0px auto;
             width: auto;
             height: 100%;
         }
     }
 }
-
-.Contact {
-    padding: 100px 0px;
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-}
-
 @media only screen and (max-width: 600px) {
 
     .images {
@@ -152,3 +157,87 @@ html, body, .App, #root {
         }
     }
 }
+    
+@media only screen and (max-width: 1000px) {
+    .icon {
+        margin-left: 20px;
+    }
+}
+
+#contact {
+    background: black;
+    padding: 150px 20px;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.section-heading {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border-top: 3px solid #cf1767;
+    padding-top: 20px;
+    max-width: 180px;
+}
+
+.section-desc a:hover,
+.contact-email a:hover {
+  color: #cf1767;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.contact-email a {
+    color: #cf1767;
+    font-size: 140px;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+
+.section-desc {
+    color: white;
+    font-size: 40px;
+}
+
+.section-desc a {
+    color:  #cf1767;
+    font-size: 40px;
+    transition: 0.3s ease-in;
+}
+
+.contact-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-phone a {
+    color: white;
+    font-size: 35px;
+    transition: 0.3s ease-in;
+}
+
+.contact-social p {
+    color: white;
+    font-size: 35px;
+}
+
+.contact-social p a {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.contact-phone a:hover,
+.contact-social p a:hover {
+    text-decoration: none;
+    color: #cf1767;
+}
+
+
+
+
+
+
