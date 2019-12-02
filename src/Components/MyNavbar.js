@@ -7,7 +7,9 @@ import Container from 'react-bootstrap/Container'
 const MyNavBar = () => {
     return (
         <Navbar fixed="top" id="my-nav-bar" bg="light" expand="lg">
-            <Navbar.Brand href="#home"><span><strong id="brand">JENNIFER NELSON</strong></span></Navbar.Brand>
+            <div>
+                <Navbar.Brand href="#home"><span><strong id="brand">JENNIFER NELSON</strong></span></Navbar.Brand>
+            </div>
             <div className="links">
                 <Nav.Link className="link" href="#home">HOME</Nav.Link>
                 <Nav.Link className="link" href="#about">ABOUT</Nav.Link>

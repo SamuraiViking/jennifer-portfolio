@@ -59,6 +59,18 @@ html, body, .App, #root {
     }
 }
 
+@media screen and (max-width: 490px) {
+    #my-nav-bar {
+        display: block;
+        text-align: center;
+    }
+    .nav-icons {
+        width: 160px;
+        margin: 0px auto;
+        line-height: 50px;
+    }
+}
+
 
 
 
