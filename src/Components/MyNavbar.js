@@ -17,7 +17,7 @@ const MyNavBar = () => {
                 <Nav.Link className="link" href="#contact">CONTACT</Nav.Link>
                 <div className="nav-icons">
                     <Nav.Link className="icon" href="#">
-                        <FontAwesomeIcon color="black" icon={["fab", "facebook"]} />
+                        <FontAwesomeIcon color="black" icon="envelope" />
                     </Nav.Link>
                     <Nav.Link className="icon" href="#">
                         <FontAwesomeIcon color="black" icon={["fab", "instagram"]} />

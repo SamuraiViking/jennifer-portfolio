@@ -10,8 +10,12 @@ import {
     faInstagram,
     faLinkedinIn,
  } from '@fortawesome/free-brands-svg-icons'
+
+ import {
+     faEnvelope,
+ } from '@fortawesome/free-solid-svg-icons'
  
-library.add(fab, faFacebook, faInstagram, faLinkedinIn)
+library.add(fab, faFacebook, faInstagram, faLinkedinIn, faEnvelope)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
