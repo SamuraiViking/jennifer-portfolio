@@ -8,27 +8,23 @@ const MyNavBar = () => {
     return (
         <Navbar fixed="top" id="my-nav-bar" bg="light" expand="lg">
             <Navbar.Brand href="#home"><span><strong id="brand">JENNIFER NELSON</strong></span></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto"></Nav>
-                <Nav id="right">
-                    <Nav.Link className="links" href="#home">HOME</Nav.Link>
-                    <Nav.Link className="links" href="#about">ABOUT</Nav.Link>
-                    <Nav.Link className="links" href="#media">MEDIA</Nav.Link>
-                    <Nav.Link className="links" href="#contact">CONTACT</Nav.Link>
-                    <div className="nav-icons">
-                        <Nav.Link className="icon" href="#">
-                            <FontAwesomeIcon icon={["fab", "facebook"]} />
-                        </Nav.Link>
-                        <Nav.Link className="icon" href="#">
-                            <FontAwesomeIcon icon={["fab", "instagram"]} />
-                        </Nav.Link>
-                        <Nav.Link className="icon" href="#">
-                            <FontAwesomeIcon icon={["fab", "linkedin"]} />
-                        </Nav.Link>
-                    </div>
-                </Nav>
-            </Navbar.Collapse>
+            <div className="links">
+                <Nav.Link className="link" href="#home">HOME</Nav.Link>
+                <Nav.Link className="link" href="#about">ABOUT</Nav.Link>
+                <Nav.Link className="link" href="#media">MEDIA</Nav.Link>
+                <Nav.Link className="link" href="#contact">CONTACT</Nav.Link>
+                <div className="nav-icons">
+                    <Nav.Link className="icon" href="#">
+                        <FontAwesomeIcon color="black" icon={["fab", "facebook"]} />
+                    </Nav.Link>
+                    <Nav.Link className="icon" href="#">
+                        <FontAwesomeIcon color="black" icon={["fab", "instagram"]} />
+                    </Nav.Link>
+                    <Nav.Link className="icon" href="#">
+                        <FontAwesomeIcon color="black" icon={["fab", "linkedin"]} />
+                    </Nav.Link>
+                </div>
+            </div>
         </Navbar>
     )
 }

@@ -10,32 +10,57 @@ html, body, .App, #root {
 
 #my-nav-bar {
     height: 100px;
-    background: black;
     padding: 0px;
+    display: flex;
+    justify-content: space-between;
 
-    #brand {
-        font-style: bold;
-        font-size: 2em;
-        letter-spacing: 5px;
-        padding-left: 30px;
-    }
+    
+}
 
-    #right {
-        font-size: 20px;
-        background: #f8f9fa;
-        padding-right: 15px;
-        line-height: 50px;
+#brand {
+    font-style: bold;
+    font-size: 2em;
+    letter-spacing: 5px;
+    padding-left: 30px;
+}
 
-        .links {
-            margin-left: 20px;
-        }
-    }
+.links {
+    display: flex;
+    font-size: 23px;
+    line-height: 100px;
 
+}
+
+.link {
+    color: black;
 }
 
 .nav-icons {
     font-size: 30px;
 }
+
+@media screen and (max-width: 1000px) {
+    .link {
+        position: fixed;
+        top: -10000px;
+    }
+
+    .links {
+
+    }
+
+    .icon {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .nav-icons {
+        margin-right: 20px;
+    }
+}
+
+
+
 
 
 
@@ -181,6 +206,7 @@ html, body, .App, #root {
     border-top: 3px solid #cf1767;
     padding-top: 20px;
     max-width: 180px;
+    margin-bottom: 60px;
 }
 
 .section-desc a:hover,
@@ -191,6 +217,8 @@ html, body, .App, #root {
 }
 
 .contact-email a {
+    display: block;
+    margin-bottom: 50px;
     color: #cf1767;
     font-size: 140px;
     margin-top: 30px;
@@ -201,6 +229,7 @@ html, body, .App, #root {
 .section-desc {
     color: white;
     font-size: 40px;
+    margin-bottom: 100px;
 }
 
 .section-desc a {
@@ -236,6 +265,59 @@ html, body, .App, #root {
     color: #cf1767;
 }
 
+@media screen and (max-width: 1300px) {
+
+    .contact-infos {
+        display: block;
+    }
+
+    .contact-phone {
+        margin-bottom: 20px;
+    }
+
+    .contact-email a {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-email a {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .contact-email a {
+        font-size: 50px;
+    }
+
+    .contact-social p {
+        font-size: 1px;
+    }
+
+    .contact-social p a {
+        display: block;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact-email a {
+        font-size: 30px;
+    }
+
+    .section-desc {
+        font-size: 30px;
+    }
+
+    .contact-phone a {
+        font-size: 27px;
+    }
+    .contact-social p a {
+        font-size: 27px;
+    }
+}
 
 
 
