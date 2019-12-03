@@ -13,8 +13,6 @@ html, body, .App, #root {
     padding: 0px;
     display: flex;
     justify-content: space-between;
-
-    
 }
 
 #brand {
@@ -26,7 +24,7 @@ html, body, .App, #root {
 
 .links {
     display: flex;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 100px;
 
 }
@@ -164,8 +162,6 @@ html, body, .App, #root {
         overflow: hidden;
 
         img {
-            display: block;
-            margin: 0px auto;
             width: auto;
             height: 100%;
         }
@@ -232,7 +228,7 @@ html, body, .App, #root {
     display: block;
     margin-bottom: 50px;
     color: #cf1767;
-    font-size: 140px;
+    font-size: 120px;
     margin-top: 30px;
     transition: all 0.3s;
 }
@@ -330,6 +326,39 @@ html, body, .App, #root {
         font-size: 27px;
     }
 }
+
+.carousel-container {
+    width: 800px;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .carousel-container {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carousel-container {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .carousel-container {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .carousel-container {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .carousel-container {
+        width: 300px;
+    }
+}
+
 
 
 

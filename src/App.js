@@ -6,12 +6,14 @@ import FixedBackground from './Components/FixedBackground'
 import Videos from './Components/Videos'
 import Images from './Components/Images'
 import Contact from './Components/Contact'
+import MyModal from './Components/Modal'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
 
 function App() {
   return (
-    <div className="App">
+    <div id="the-app"className="App">
       <MyNavBar />
       <LandingPage />
       <About />
@@ -20,6 +22,7 @@ function App() {
         text="MEDIA"
         color="black"
         />
+      <MyModal />
       <Videos />
       <Images />
       <Contact />
