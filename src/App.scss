@@ -57,7 +57,7 @@ html, body, .App, #root {
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 550px) {
     #my-nav-bar {
         display: block;
         text-align: center;
@@ -167,6 +167,16 @@ html, body, .App, #root {
         }
     }
 }
+
+@media only screen and (max-width: 750px) {
+    #my-nav-bar {
+
+        #brand {
+            font-size: 1em;
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     .images {
@@ -181,19 +191,6 @@ html, body, .App, #root {
             width: 100%;
         }
 
-    }
-
-    #my-nav-bar {
-
-        #brand {
-            font-size: 1em;
-        }
-    }
-}
-    
-@media only screen and (max-width: 1000px) {
-    .icon {
-        margin-left: 20px;
     }
 }
 

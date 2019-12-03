@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 
 const MyNavBar = () => {
     return (
-        <Navbar fixed={""} id="my-nav-bar" bg="light" expand="lg">
+        <Navbar fixed={"top"} id="my-nav-bar" bg="light" expand="lg">
             <div>
                 <Navbar.Brand href="#home"><span><strong id="brand">JENNIFER NELSON</strong></span></Navbar.Brand>
             </div>

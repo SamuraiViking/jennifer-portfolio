@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "surge /Users/kevin/code/jen-port/p1/jennifer-nelson/build https://jennifernelson.surge.sh/"
+    "deploy": "npm run build && surge /Users/kevin/code/jen-port/p1/jennifer-nelson/build https://jennifernelson.surge.sh/"
   },
   "eslintConfig": {
     "extends": "react-app"
