@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MyNavBar from './Components/MyNavbar'
 import LandingPage from './Components/LandingPage'
 import About from './Components/About'
@@ -12,6 +12,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
 
 function App() {
+  const [modalIsOpen,setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+    console.log("Hello World");
+  }
+
+  function closeModal(){
+    setIsOpen(false);
+  }
+
   return (
     <div id="the-app"className="App">
       <MyNavBar />
@@ -22,9 +33,14 @@ function App() {
         text="MEDIA"
         color="black"
         />
-      <MyModal />
+      <MyModal 
+        isOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
       <Videos />
-      <Images />
+      <Images
+        openModal={openModal}
+      />
       <Contact />
     </div>
   );
